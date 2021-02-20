@@ -1,14 +1,18 @@
-import React from 'react'
+import React, { Component } from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 import Notifications from './Notifications'
 import Transactions from '../transactions/Transactions'
+import { connect } from 'react-redux'
 
-const Dashboard = () => {
-    return (
+class Dashboard extends Component {
+    render() {
+        const { transactions } = this.props
+
+        return (
             <Container>
                 <Row>
                     <Col>
-                        <Transactions/>
+                        <Transactions transactions={transactions}/>
                     </Col>
                     <Col>
                         <Notifications/>
@@ -16,6 +20,13 @@ const Dashboard = () => {
                 </Row>
             </Container>
         )
+    }
 }
 
-export default Dashboard
+const mapStateToProps = (state) => {
+    return {
+        transactions: state.transaction.transactions
+    }
+}
+
+export default connect(mapStateToProps)(Dashboard)

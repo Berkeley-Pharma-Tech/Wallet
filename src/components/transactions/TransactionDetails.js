@@ -1,10 +1,9 @@
 import React from 'react'
+import { ListGroup } from 'react-bootstrap'
 
-const TransactionDetails = () => {
+const TransactionDetails = ({ transaction }) => {
     return (
-        <div>
-            
-        </div>
+        <ListGroup.Item key={transaction.id}> Amount: {transaction.amount} from {transaction.from} to {transaction.to} at {transaction.time}</ListGroup.Item>
     )
 }
 
