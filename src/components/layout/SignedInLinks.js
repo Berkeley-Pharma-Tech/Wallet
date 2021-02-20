@@ -4,8 +4,8 @@ import { Nav } from 'react-bootstrap'
 const SignedInLinks = () => {
     return (
         <Nav>
-            <Nav.Link href="#logout">Log Out</Nav.Link>
-            <Nav.Link href="#account">Shelden Shi</Nav.Link>
+            <Nav.Link href="/">Log Out</Nav.Link>
+            <Nav.Link href="/">Shelden Shi</Nav.Link>
         </Nav>
     )
 }
