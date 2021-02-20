@@ -5,7 +5,7 @@ import SignedOutLinks from './SignedOutLinks'
 
 const AppNavbar = () => {
     return (
-        <Navbar bg="dark" variant="dark" fixed="top">
+        <Navbar bg="dark" variant="dark">
             <Navbar.Brand href="/">Wallet</Navbar.Brand>
             <Nav className="mr-auto">
                 <Nav.Link href="#home">Place Holder</Nav.Link>

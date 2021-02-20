@@ -1,19 +1,21 @@
-import React, { Component } from 'react'
+import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 import Notifications from './Notifications'
+import Transactions from '../transactions/Transactions'
 
-
-class Dashboard extends Component {
-    render() {
-        return (
+const Dashboard = () => {
+    return (
             <Container>
                 <Row>
-                    <Col></Col>
+                    <Col>
+                        <Transactions/>
+                    </Col>
                     <Col>
                         <Notifications/>
                     </Col>
                 </Row>
             </Container>
         )
-    }
 }
+
+export default Dashboard
