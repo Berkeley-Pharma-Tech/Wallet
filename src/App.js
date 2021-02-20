@@ -6,6 +6,7 @@ import Navbar from './components/layout/Navbar'
 import Dashboard from './components/dashboard/Dashboard'
 import SignIn from './components/auth/SignIn'
 import SignUp from './components/auth/SignUp'
+import CreateTransaction from './components/transactions/CreateTransaction';
 
 class App extends Component {
   componentWillMount() {
@@ -32,6 +33,7 @@ class App extends Component {
             <Route exact path='/' component={Dashboard}/>
             <Route path='/signin' component={SignIn}/>
             <Route path='/signup' component={SignUp}/>
+            <Route path='/createtransaction' component={CreateTransaction}/>
           </Switch>
         </div>
         

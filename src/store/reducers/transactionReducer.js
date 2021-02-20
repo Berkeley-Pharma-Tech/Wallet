@@ -5,6 +5,10 @@ const initState = {
     ]
 }
 const transactionReducer = (state=initState , action) => {
+    switch(action.type) {
+        case 'CREATE_TRANSACTION':
+            console.log('create transaction', action.transaction);
+    }
     return state
 }
 export default transactionReducer
