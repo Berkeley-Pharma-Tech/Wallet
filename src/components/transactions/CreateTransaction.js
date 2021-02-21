@@ -5,7 +5,7 @@ import { connect } from 'react-redux'
 
 class CreateTransaction extends Component {
     state = {
-        id: 0,
+        id: '',
         amount: 0,
         from: '',
         to: '',
@@ -28,7 +28,7 @@ class CreateTransaction extends Component {
             <Form onSubmit={this.handleSubmit}>
                 <Form.Group controlId="id">
                     <Form.Label>ID</Form.Label>
-                    <Form.Control type="int" placeholder="id" onChange={this.handleChange}/>
+                    <Form.Control type="text" placeholder="id" onChange={this.handleChange}/>
                     <Form.Text className="text-muted">
                     </Form.Text>
                 </Form.Group>
@@ -43,10 +43,6 @@ class CreateTransaction extends Component {
                 <Form.Group controlId="to">
                     <Form.Label>To</Form.Label>
                     <Form.Control type="text" placeholder="to" onChange={this.handleChange}/>
-                </Form.Group>
-                <Form.Group controlId="time">
-                    <Form.Label>Time</Form.Label>
-                    <Form.Control type="text" placeholder="time" onChange={this.handleChange}/>
                 </Form.Group>
                 <Button variant="primary" type="submit">
                     Sign
