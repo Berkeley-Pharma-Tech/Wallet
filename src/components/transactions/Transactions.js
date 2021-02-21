@@ -1,6 +1,5 @@
 import React from 'react'
 import { ListGroup } from 'react-bootstrap'
-import TransactionDetails from './TransactionDetails'
 import TransactionSummary from './TransactionSummary'
 const Transactions = ({transactions}) => {
     return (
