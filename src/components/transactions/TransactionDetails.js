@@ -3,7 +3,7 @@ import { ListGroup } from 'react-bootstrap'
 
 const TransactionDetails = ({ transaction }) => {
     return (
-        <ListGroup.Item > Amount: {transaction.amount} from {transaction.from} to {transaction.to} at {transaction.time}</ListGroup.Item>
+        <ListGroup.Item > Amount: {transaction.amount} from {transaction.from} to {transaction.to} at {transaction.time.toString()}</ListGroup.Item>
     )
 }
 

@@ -1,12 +1,12 @@
 import authReducer from './authReducer'
 import transactionReducer from './transactionReducer'
 import { combineReducers } from 'redux'
-import { firestoreRducer } from 'redux-firestore'
+import { firestoreReducer } from 'redux-firestore'
 
 const rootReducer = combineReducers({
     auth: authReducer,
     transaction: transactionReducer,
-    firestore: firestoreRducer
+    firestore: firestoreReducer
 });
 
 export default rootReducer
