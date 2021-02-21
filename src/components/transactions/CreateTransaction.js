@@ -5,11 +5,9 @@ import { connect } from 'react-redux'
 
 class CreateTransaction extends Component {
     state = {
-        id: '',
         amount: 0,
         from: '',
-        to: '',
-        time: ''
+        to: ''
     }
     handleChange = (e) => {
         this.setState({
@@ -26,12 +24,6 @@ class CreateTransaction extends Component {
         return (
             <div className="container">
             <Form onSubmit={this.handleSubmit}>
-                <Form.Group controlId="id">
-                    <Form.Label>ID</Form.Label>
-                    <Form.Control type="text" placeholder="id" onChange={this.handleChange}/>
-                    <Form.Text className="text-muted">
-                    </Form.Text>
-                </Form.Group>
                 <Form.Group controlId="amount">
                     <Form.Label>Amount</Form.Label>
                     <Form.Control type="float" placeholder="amount" onChange={this.handleChange}/>
