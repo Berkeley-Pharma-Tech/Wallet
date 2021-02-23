@@ -2,6 +2,7 @@ import React from 'react'
 import { Navbar, Nav } from 'react-bootstrap'
 import SignedInLinks from './SignedInLinks'
 import SignedOutLinks from './SignedOutLinks'
+import { connect } from 'react-redux'
 
 const AppNavbar = () => {
     return (
@@ -20,4 +21,11 @@ const AppNavbar = () => {
     )
 }
 
-export default AppNavbar
+const mapStateToProps = (state) => {
+    console.log(state);
+    return {
+
+    }
+}
+
+export default connect(mapStateToProps)(AppNavbar)

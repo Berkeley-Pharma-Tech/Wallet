@@ -4,7 +4,7 @@ import TransactionSummary from './TransactionSummary'
 const Transactions = ({transactions}) => {
     return (
         <ListGroup>
-            {transactions && transactions.map((transaction) => <TransactionSummary transaction={transaction} key={transaction.id}/>)}
+            {transactions && transactions.map((transaction) => <TransactionSummary transaction={transaction} key={transaction.id}  />)}
         </ListGroup>
         
     )
