@@ -1,5 +1,7 @@
 import React from 'react'
 import { Nav } from 'react-bootstrap'
+import { connect } from 'react-redux'
+import { signOut } from '../../store/actions/authActions'
 
 const SignedInLinks = () => {
     return (
@@ -10,4 +12,10 @@ const SignedInLinks = () => {
     )
 }
 
-export default SignedInLinks
+const mapDispatchToProps = (dispatch) => {
+    return {
+        signOut: () => dispatch(signOut())
+    }
+}
+
+export default connect(mapDispatchToProps)(SignedInLinks)
