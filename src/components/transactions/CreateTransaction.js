@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { Form, Button } from 'react-bootstrap'
 import { createTransaction } from '../../store/actions/transactionActions'
 import { connect } from 'react-redux'
+import { Redirect } from 'react-router-dom'
 
 class CreateTransaction extends Component {
     state = {
@@ -21,6 +22,8 @@ class CreateTransaction extends Component {
     }
 
     render() {
+        const { auth } = this.props
+        if (!auth.uid) return <Redirect to='/signin'/>
         return (
             <div className="container">
             <Form onSubmit={this.handleSubmit}>
@@ -44,11 +47,15 @@ class CreateTransaction extends Component {
         )
     }
 }
-
+const mapStateToProps = (state) => {
+    return {
+        auth: state.firebase.auth
+    }
+}
 const mapDispatchToProps = (dispatch) => {
     return {
         createTransaction: (transaction) => dispatch(createTransaction(transaction))
     }
 }
 
-export default connect(null, mapDispatchToProps)(CreateTransaction)
+export default connect(mapStateToProps, mapDispatchToProps)(CreateTransaction)
