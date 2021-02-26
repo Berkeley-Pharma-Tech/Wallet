@@ -1,13 +1,16 @@
-import React from 'react'
+import React from "react";
+import FrontEnd from "../../BPTTokenconfig/src/FrontEnd.js";
 
 const Buy = (props) => {
     return (
-        <div>
-      <p>Buy</p>
-    </div>
-    )
-  
+    <React.Fragment>
+      <div>
+        <p>Buy</p>
+        <FrontEnd />
+      </div>
+    </React.Fragment>
+    );
 }
 
 
-export default Buy
+export default Buy;
