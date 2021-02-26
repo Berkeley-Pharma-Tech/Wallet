@@ -3,10 +3,10 @@ import { Nav } from 'react-bootstrap'
 import { connect } from 'react-redux'
 import { signOut } from '../../store/actions/authActions'
 
-const SignedInLinks = () => {
+const SignedInLinks = (props) => {
     return (
         <Nav>
-            <Nav.Link href="/">Log Out</Nav.Link>
+            <Nav.Link onSelect={props.signOut} href="/">Log Out</Nav.Link>
             <Nav.Link href="/">Shelden Shi</Nav.Link>
         </Nav>
     )
@@ -18,4 +18,4 @@ const mapDispatchToProps = (dispatch) => {
     }
 }
 
-export default connect(mapDispatchToProps)(SignedInLinks)
+export default connect(null, mapDispatchToProps)(SignedInLinks)

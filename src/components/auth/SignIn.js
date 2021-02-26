@@ -38,7 +38,10 @@ class SignIn extends Component {
                 <Button variant="primary" type="submit">
                     LogIn
                 </Button>
-                { authError ? <p>{authError}</p> : null}
+                { authError 
+                    ? 
+                        <p>{authError}</p> 
+                    : null}
             </Form>
             </div>
         )
