@@ -1,4 +1,5 @@
-pragma solidity >=0.4.22 <0.8.0;
+pragma solidity >= 0.5.0;
+
 import "./BPTToken.sol";
 
 contract BPTTokenSale {
@@ -8,6 +9,8 @@ contract BPTTokenSale {
   uint256 public tokensSold;
 
   event Sell(address _buyer, uint256 _amount);
+  event EndSale(uint256 _totalAmountSold);
+
 
   constructor (BPTToken _tokenContract, uint256 _tokenPrice) public {
     admin = msg.sender;
@@ -33,5 +36,7 @@ contract BPTTokenSale {
     require(msg.sender == admin);
     require(tokenContract.transfer(admin, tokenContract.balanceOf(address(this))));
     admin.transfer(address(this).balance);
+    emit EndSale(tokensSold);
+
   }
 }
