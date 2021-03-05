@@ -8,7 +8,8 @@ import SignIn from './components/auth/SignIn'
 import SignUp from './components/auth/SignUp'
 import CreateTransaction from './components/transactions/CreateTransaction';
 import TransactionDetails from './components/transactions/TransactionDetails';
-import Buy from './components/buy/Buy'
+import Buy from './components/buy/Buy';
+import Home from './components/dashboard/Home';
 
 class App extends Component {
   componentWillMount() {
@@ -30,7 +31,7 @@ class App extends Component {
     return (
       <BrowserRouter>
         <div className="App">
-          <Navbar/> 
+          <Navbar/>
           <Switch>
             <Route exact path='/' component={ Dashboard }/>
             <Route path='/transaction/:id' component={TransactionDetails} />
@@ -38,9 +39,10 @@ class App extends Component {
             <Route path='/signup' component={ SignUp } />
             <Route path='/createtransaction' component={CreateTransaction} />
             <Route path='/buy' component={Buy}/>
+            <Route path='/home' component={Home}/>
           </Switch>
         </div>
-        
+
       </BrowserRouter>
     );
   }

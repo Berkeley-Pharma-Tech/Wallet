@@ -5,7 +5,6 @@ const Buy = (props) => {
     return (
     <React.Fragment>
       <div>
-        <p>Buy</p>
         <FrontEnd />
       </div>
     </React.Fragment>

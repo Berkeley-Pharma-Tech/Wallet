@@ -1,10 +1,14 @@
 import React, {Component, useState, useEffect} from "react";
 import {Helmet} from "react-helmet";
+import TokenConfig from '../../BPTTokenconfig/src/js/tokenconfig.js'
 // Fix this
-// import App from filepath;
+// import render from "../../BPTTokenconfig/src/js/tokenconfig.js";
 
 
 let FrontEnd = () => {
+
+  // render();
+  const initContract = TokenConfig()
   return (
     <React.Fragment>
       <Helmet>
