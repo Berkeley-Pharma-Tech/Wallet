@@ -8,7 +8,7 @@ import TokenConfig from '../../BPTTokenconfig/src/js/tokenconfig.js'
 let FrontEnd = () => {
 
   // render();
-  const initContract = TokenConfig()
+  const initContract = TokenConfig();
   return (
     <React.Fragment>
       <Helmet>
