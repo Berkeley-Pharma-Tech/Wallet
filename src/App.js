@@ -9,9 +9,17 @@ import SignUp from './components/auth/SignUp'
 import CreateTransaction from './components/transactions/CreateTransaction';
 import TransactionDetails from './components/transactions/TransactionDetails';
 import Buy from './components/buy/Buy'
+import detectEthereumProvider from '@metamask/detect-provider';
 
 const App = () => {
-  
+    const provider = detectEthereumProvider().then((provider) => provider);
+    if (provider) {
+      // From now on, this should always be true:
+      // provider === window.ethereum
+      console.log('Good to go!');
+    } else {
+      console.log('Please install MetaMask!');
+    }
     return (
       <BrowserRouter>
         <div className="App">
