@@ -134,9 +134,11 @@ const Buy = () => {
   
   //todo 
   /*
-  clear the form after clicking buy
+  clear the form after clicking buy (fixed)
 
-  cant add again once added
+  cant add BPT to watch again once added
+
+  after buy, show in transaction on Metamask
   */
   if (metamaskInstalled) {
     return (
