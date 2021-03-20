@@ -9,6 +9,7 @@ import SignUp from './components/auth/SignUp'
 import CreateTransaction from './components/transactions/CreateTransaction';
 import TransactionDetails from './components/transactions/TransactionDetails';
 import Buy from './components/buy/Buy'
+import playground from './components/buy/Playground'
 import detectEthereumProvider from '@metamask/detect-provider';
 
 const App = () => {
@@ -20,6 +21,7 @@ const App = () => {
     } else {
       console.log('Please install MetaMask!');
     }
+    
     return (
       <BrowserRouter>
         <div className="App">
@@ -31,6 +33,7 @@ const App = () => {
             <Route path='/signup' component={ SignUp } />
             <Route path='/createtransaction' component={CreateTransaction} />
             <Route path='/buy' component={Buy}/>
+            <Route path='/playground' component={playground}/>
           </Switch>
         </div>
         

@@ -12,7 +12,7 @@ const AppNavbar = (props) => {
             <Navbar.Brand href="/">Wallet</Navbar.Brand>
             <Nav className="mr-auto">
                 <Nav.Link href="/createtransaction">Create Transaction</Nav.Link>
-                <Nav.Link href="#features">Place Holder</Nav.Link>
+                <Nav.Link href="/buy">Buy BPT</Nav.Link>
                 <Nav.Link href="#pricing">Place Holder</Nav.Link>
             </Nav>
             {links}
