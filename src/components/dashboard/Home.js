@@ -4,54 +4,49 @@ import logo from "../logo.jpg";
 import "../../App.css";
 
 let Home = () => {
-    console.log(logo);
     return (
       <React.Fragment>
-        <div className="logo-container">
-          <div className="text-container">
-            <p className="title logo-title">Invest in the Future.</p>
-            <p className="text logo-text"> With the innovative BPT Token, investing in one of
-            the leading biotech startups has never been easier. Holding our token will ensure that
-            you take part in our groundbreaking projects backed by seasoned entrepreuneurs and
-            young minds from top universities.  </p>
+        <div className="title-section-container">
+          <p className="title-section first-title">Invest in the future.</p>
+          <p className="title-section first-title-text">With the innovative BPT Token, investing 
+          in one of the leading biotech startups has never been easier. Holding our token 
+          will ensure that you take part in our groundbreaking projects backed by 
+          seasoned entrepreuneurs and young minds from top universities.</p>
+          <button type="button" className="title-section buy-now">Buy Now</button>
+          <svg className="blob1" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <path fill="rgba(255, 214, 0, 0.18)" d="M41.4,-55.1C52.3,-49,58.8,-35.1,58.5,-22.3C58.2,-9.4,51,2.4,43.6,10.7C36.1,19,28.4,23.7,21.1,37.1C13.7,50.6,6.9,72.9,-3,77C-12.9,81.2,-25.9,67.3,-30.7,53C-35.6,38.8,-32.3,24.1,-41.5,10.1C-50.6,-3.8,-72.1,-17.1,-71.9,-25.1C-71.7,-33.1,-49.9,-35.9,-34.3,-40.4C-18.7,-44.9,-9.3,-51.2,2.9,-55.2C15.2,-59.3,30.5,-61.1,41.4,-55.1Z" transform="translate(100 100)" />
+          </svg>
+          <img className="logo" src={logo}></img>
+        </div>
+        <div className="mid-page-container">
+          <p className="general-title">Powering Berkeley Pharma Tech.</p>
+          <p className="general-text">The BPT Token serves three distinct purposes:</p>
+          <p className="general-text italicized">Incentivizing, Rewarding, and Investing.</p>
+          <div className="info1">
+            <p className="italicized it-title">Incentivizing,</p>
+            <p className="info">Employees and interns at Berkeley Pharma 
+            Tech are rewarded with BPT Tokens for going above and beyond. This 
+            aspect of the token will make sure that there will constantly be a high 
+            amount of demand for the token. </p>
           </div>
-          <img src={logo} alt="Image failed to load." className="logo"></img>
+          <div className="info2">
+            <p className="italicized it-title">Rewarding,</p>
+            <p className="info">Those that partake in other projects at Berkeley Pharma 
+            Tech will have a chance to earn BPT Tokens as well. For example, landing on the 
+            top leaderboards in our new hit game, or publishing a scientific article with us, 
+            to name a few. </p>
+          </div>
+          <div className="info3">
+            <p className="italicized it-title">Investing.</p>
+            <p className="info">Being a pre-IPO company, it is naturally hard to invest in Berkeley 
+            Pharma Tech. The BPT Token changes the entire game. As Berkeley Pharma Tech continues to 
+            produce brilliant and innovative projects, the associative BPT Token will rise in price to 
+            reflect this. </p>
+          </div>
         </div>
-        <div className="container">
-            <p className="title">What is the BPT Token?</p>
-            <p className="text">As a young startup company, naturally one of Berkeley Pharma Tech’s
-            main concerns is funding. In order to effectively carry out the Berkeley Pharma Tech mission,
-            it is important to raise enough funds to have sufficient resources to fuel projects, which
-            often proves difficult for a pre-ipo company. Due to it not yet being listed on any stock exchange,
-            investors may find trouble in finding opportunities to help support Berkeley Pharma Tech, causing projects
-            to face obstacles as they don’t have enough capital to back research.
-
-            This is where the BPT Token comes in. By purchasing BPT Tokens, investors are helping fund the countless innovative
-            projects at Berkeley Pharma Tech, from groundbreaking biomedical research all the way to the development
-            of captivating mobile games.
-
-            Aside from being purchased, there are many other ways that BPT Tokens are distributed. Within
-            the company, the BPT Token is used as a bonus to reward employees and interns for going above and beyond.
-            Also, those that publish their scientific research articles with us also get rewarded with these tokens.
-            Finally, gamers on top of our leaderboard in our new hit game will also receive BPT Tokens.</p>
-        </div>
-        <div className="container">
-            <p className="title">Supply</p>
-            <p className="text">Unlike the tokens of other blockchains, the BPT Token isn’t mined or awarded over time.
-            Instead, 1 billion tokens were created when the BPT Token was launched, and no more tokens will be created
-            over time. This will ensure that each and every token remains valuable and will not be inflated over time.</p>
-        </div>
-        <div className="container">
-            <p className="title">How to buy and store BPT Token</p>
-            <p className="text">Buying and storing your BPT Tokens has never been easier! With a simple click of a button,
-            you can both purchase and safely store your BPT Tokens in our high-security digitial wallets. Or if you prefer to
-            hold on to your tokens yourself, you may purchase them and store them in your own personal wallet as well. </p>
-        </div>
-        <div className="container">
-            <p className="title">Future of the token</p>
-            <p className="text">Although the current state of the token is already extremely innovative, the team at Berkeley
-            Pharma Tech has more advancement plans in the near future for the token. See our token’s whitepaper for more details. </p>
-        </div>
+        <svg className="blob2" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+          <path fill="rgba(255, 214, 0, 0.18)" d="M52.9,-44.7C63,-29.6,61.7,-7.9,55.8,10.7C50,29.3,39.5,44.9,23.1,55.9C6.6,66.9,-15.9,73.3,-34.4,66.4C-52.9,59.4,-67.3,39,-72.5,16.5C-77.7,-6.1,-73.7,-30.8,-60,-46.7C-46.4,-62.7,-23.2,-69.9,-0.9,-69.1C21.4,-68.4,42.8,-59.8,52.9,-44.7Z" transform="translate(100 100)" />
+        </svg>
       </React.Fragment>
     );
 }
