@@ -31,7 +31,7 @@ class App extends Component {
     return (
       <BrowserRouter>
         <div className="App">
-          <Navbar/>
+          <Navbar className="navbar"/>
           <Switch>
             <Route exact path='/' component={ Dashboard }/>
             <Route path='/transaction/:id' component={TransactionDetails} />
