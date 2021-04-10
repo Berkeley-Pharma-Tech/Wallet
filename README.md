@@ -69,3 +69,9 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
+
+Figma Design File: https://www.figma.com/file/9cOfEEMm9SjOA9qvmpBWoJ/BPT-Token-Website?node-id=0%3A1
+(Make a copy in order to edit)
+
+
+BPT Token Whitepaper: https://docs.google.com/document/d/1yZqSgsfUXrkKb0FaXQ8vAWnECDWm1nlNx4IhThZpFic/edit?usp=sharing
